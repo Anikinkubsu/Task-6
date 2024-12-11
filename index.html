@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework #6</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор</h1>
+        <form id="form">
+            <div class="form-group">
+                <label>Select product option:</label><br>
+                <input type="radio" name="prodOptions" value="item_1"> Квартира - 700 руб<br>
+                <input type="radio" name="prodOptions" value="item_2"> Переферия - 150 руб<br>
+                <input type="radio" name="prodOptions" value="item_3"> Техника - 500 руб
+            </div>
+
+            <div class="form-group">
+                <label>Amount:</label>
+                <input type="number" id="amount" value="1" min="1" step="1">
+                <div id="error-message" class="error"></div>
+            </div>
+
+            <div id="check"></div>
+            <div id="select"></div>
+
+            <div class="result" id="result">0 рублей</div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
